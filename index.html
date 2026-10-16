@@ -13,7 +13,7 @@
         }
 
         body {
-            background-color: #eef2f5;
+            background-color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -23,7 +23,7 @@
 
         /* Simulación de Tarjeta de Presentación Horizontal */
         .card {
-            background: #ffffff;
+            background: #be8c6b;
             width: 100%;
             max-width: 480px; /* Ancho horizontal */
             border-radius: 16px;
@@ -35,7 +35,7 @@
 
         /* Encabezado en el límite superior con el nombre del negocio */
         .card-header {
-            background: #1e293b;
+            background: #156116;
             color: #ffffff;
             padding: 16px 20px;
             text-align: center;
@@ -66,7 +66,7 @@
         .label {
             font-size: 11px;
             font-weight: 700;
-            color: #64748b;
+            color: #ffffff;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
@@ -74,19 +74,19 @@
         .value {
             font-size: 16px;
             font-weight: 600;
-            color: #0f172a;
+            color: #000000;
         }
 
-        /* Filas con Valor + Botón de Copiar */
+        /* Filas con Valor + Botón de Copiar (15% más obscuro) */
         .row-action {
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 10px;
-            background: #f8fafc;
+            background: #d2dce6;
             padding: 10px 12px;
             border-radius: 10px;
-            border: 1px solid #e2e8f0;
+            border: 1px solid #b8c6d4;
         }
 
         .row-action .value {
@@ -96,9 +96,9 @@
             word-break: break-all;
         }
 
-        /* Botones de Copiado */
+        /* Botones de Copiado (Verde bonito) */
         .btn-copy {
-            background-color: #2563eb;
+            background-color: #604a33;
             color: white;
             border: none;
             padding: 8px 12px;
@@ -112,7 +112,7 @@
         }
 
         .btn-copy:active {
-            background-color: #1d4ed8;
+            background-color: #059669;
         }
 
         /* Notificación Flotante (Toast) */
@@ -144,7 +144,7 @@
     <div class="card">
         <!-- Límite superior: Nombre del Negocio -->
         <div class="card-header">
-            <h1>Heladería</h1>
+            <h1>Datos para transferir</h1>
         </div>
 
         <!-- Contenido principal -->
@@ -153,14 +153,14 @@
             <!-- Nombre de la CLABE / Titular -->
             <div class="info-group">
                 <span class="label">Nombre del titular:</span>
-                <span class="value">Andrea González Tobar</span>
+                <span class="value">Aqui ira el nombre del titular del cliente</span>
             </div>
 
             <!-- Cuenta CLABE + Botón de Copiar -->
             <div class="info-group">
                 <span class="label">Cuenta CLABE:</span>
                 <div class="row-action">
-                    <span class="value" id="clabeVal">4152324345436790</span>
+                    <span class="value" id="clabeVal">Aqui ira la cuenta clabe del cliente</span>
                     <button class="btn-copy" onclick="copiarAlPortapapeles('clabeVal', '¡CLABE copiada!')">Copiar CLABE</button>
                 </div>
             </div>
@@ -169,7 +169,7 @@
             <div class="info-group">
                 <span class="label">Número de WhatsApp:</span>
                 <div class="row-action">
-                    <span class="value" id="wsVal">4492056415</span>
+                    <span class="value" id="wsVal">Aqui el numero del cliente</span>
                     <button class="btn-copy" onclick="copiarAlPortapapeles('wsVal', '¡Número copiado!')">Copiar WhatsApp</button>
                 </div>
             </div>
